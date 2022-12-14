@@ -33,7 +33,7 @@ import {
 } from "@chakra-ui/react";
 
 // Assets
-import signInImage from "assets/img/signInImage.png";
+import signInImage from "assets/img/building-futures.png";
 
 // Custom Components
 import AuthFooter from "components/Footer/AuthFooter";
