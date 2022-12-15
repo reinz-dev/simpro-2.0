@@ -1,3 +1,3 @@
 # SIMPRO-2.0
 
-![mockup-Simpro-2 0](https://user-images.githubusercontent.com/110806427/207687905-ec2fce4f-0703-45b3-9f2b-64eb38bd8b2b.png)
+![Screenshot from 2022-12-15 12-31-29](https://user-images.githubusercontent.com/110806427/207780412-6c50f470-6220-4f25-9897-d86ab07dd2b7.png)
