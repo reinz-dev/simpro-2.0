@@ -131,7 +131,7 @@ export default function Dashboard(props) {
         <Portal>
           <AdminNavbar
             onOpen={onOpen}
-            logoText={"ADMIN SIMPRO-2.0"}
+            logoText={"KEPALA PROYEK"}
             brandText={getActiveRoute(routes)}
             secondary={getActiveNavbar(routes)}
             fixed={fixed}
