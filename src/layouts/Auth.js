@@ -104,12 +104,6 @@ export default function Pages(props) {
   return (
     <ChakraProvider theme={theme} resetCss={false} w="100%">
       <Box ref={navRef} w="100%">
-        <Portal containerRef={navRef}>
-          <AuthNavbar
-            secondary={getActiveNavbar(routes)}
-            logoText="SIMPRO-2.0"
-          />
-        </Portal>
         <Box w="100%">
           <Box ref={wrapper} w="100%">
             <Switch>

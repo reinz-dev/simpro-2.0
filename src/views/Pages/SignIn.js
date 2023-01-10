@@ -32,9 +32,6 @@ import {
   DarkMode,
 } from "@chakra-ui/react";
 
-// Assets
-import signInImage from "assets/img/building-futures.png";
-
 // Custom Components
 import AuthFooter from "components/Footer/AuthFooter";
 import GradientBorder from "components/GradientBorder/GradientBorder";
@@ -48,7 +45,6 @@ function SignIn() {
       <Flex
         minH="100vh"
         h={{ base: "120vh", lg: "fit-content" }}
-        w="100%"
         maxW="1044px"
         mx="auto"
         pt={{ sm: "100px", md: "0px" }}
@@ -57,7 +53,7 @@ function SignIn() {
       >
         <Flex
           alignItems="center"
-          justifyContent="start"
+          justifyContent="center"
           style={{ userSelect: "none" }}
           mx={{ base: "auto", lg: "unset" }}
           ms={{ base: "auto", lg: "auto" }}
@@ -70,6 +66,7 @@ function SignIn() {
             background="transparent"
             mt={{ base: "50px", md: "150px", lg: "160px", xl: "245px" }}
             mb={{ base: "60px", lg: "95px" }}
+            alignItems="center"
           >
             <Heading color={titleColor} fontSize="32px" mb="10px">
               Nice to see you!
@@ -171,7 +168,13 @@ function SignIn() {
             >
               <Text color={textColor} fontWeight="medium">
                 Don't have an account?
-                <Link color={titleColor} as="span" ms="5px" fontWeight="bold">
+                <Link
+                  href
+                  color={titleColor}
+                  as="span"
+                  ms="5px"
+                  fontWeight="bold"
+                >
                   Sign Up
                 </Link>
               </Text>
@@ -185,51 +188,6 @@ function SignIn() {
           mb="80px"
         >
           <AuthFooter />
-        </Box>
-        <Box
-          display={{ base: "none", lg: "block" }}
-          overflowX="hidden"
-          h="100%"
-          maxW={{ md: "50vw", lg: "50vw" }}
-          minH="100vh"
-          w="960px"
-          position="absolute"
-          left="0px"
-        >
-          <Box
-            bgImage={signInImage}
-            w="100%"
-            h="100%"
-            bgSize="cover"
-            bgPosition="50%"
-            position="absolute"
-            display="flex"
-            flexDirection="column"
-            justifyContent="center"
-            alignItems="center"
-            position="absolute"
-          >
-            <Text
-              textAlign="center"
-              color="white"
-              letterSpacing="8px"
-              fontSize="20px"
-              fontWeight="500"
-            >
-              INSPIRED BY THE FUTURE:
-            </Text>
-            <Text
-              textAlign="center"
-              color="transparent"
-              letterSpacing="8px"
-              fontSize="36px"
-              fontWeight="bold"
-              bgClip="text !important"
-              bg="linear-gradient(94.56deg, #FFFFFF 79.99%, #21242F 102.65%)"
-            >
-              SIMPRO-2.0
-            </Text>
-          </Box>
         </Box>
       </Flex>
     </Flex>
